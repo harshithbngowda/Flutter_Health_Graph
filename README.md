@@ -30,3 +30,10 @@ Clone the repository or copy the code files into your Flutter project.
 Ensure you have Flutter SDK installed (flutter --version).
 Run flutter pub get to install dependencies.
 Launch the app with flutter run.
+
+<b>Running the App</b>
+
+Connect a device or start an emulator.
+In the project directory, run:
+flutter run
+The app will launch on your connected device/emulator
