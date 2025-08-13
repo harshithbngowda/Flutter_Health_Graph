@@ -33,9 +33,13 @@ class _HistoryScreenState extends State<HistoryScreen> {
       appBar: AppBar(
         title: const Text('History'),
         centerTitle: true,
-        leading: TextButton(
-          onPressed: () => Navigator.pop(context),
-          child: const Text("Back", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+        leading: ConstrainedBox(
+          constraints: const BoxConstraints(minWidth: 64),
+          child: TextButton(
+            onPressed: () => Navigator.pop(context),
+            style: TextButton.styleFrom(foregroundColor: Colors.white, padding: const EdgeInsets.symmetric(horizontal: 12)),
+            child: const Text("Back", style: TextStyle(fontWeight: FontWeight.bold)),
+          ),
         ),
       ),
       body: _history.isEmpty
@@ -51,8 +55,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                   margin: const EdgeInsets.symmetric(vertical: 6),
                   child: ListTile(
                     title: Text(entry['name']),
-                    subtitle: Text(
-                        "Steps: ${entry['steps']} | Water: ${entry['water']}L | Sleep: ${entry['sleep']} hrs"),
+                    subtitle: Text("Steps: ${entry['steps']} | Water: ${entry['water']}L | Sleep: ${entry['sleep']} hrs"),
                     trailing: Text("${date.day}/${date.month}/${date.year}"),
                     onTap: () {
                       Navigator.push(
@@ -60,8 +63,8 @@ class _HistoryScreenState extends State<HistoryScreen> {
                         MaterialPageRoute(
                           builder: (_) => SummaryScreen(
                             name: entry['name'],
-                            age: entry['age'],
-                            steps: entry['steps'],
+                            age: (entry['age'] as num).toInt(),
+                            steps: (entry['steps'] as num).toInt(),
                             water: (entry['water'] as num).toDouble(),
                             sleep: (entry['sleep'] as num).toDouble(),
                           ),
