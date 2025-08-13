@@ -1,4 +1,4 @@
-<img src="https://github.com/harshithbngowda/Flutter_Health_Graph/blob/main/ss1.jpg" width="800" height="1600">
+<img src="https://github.com/harshithbngowda/Flutter_Health_Graph/blob/a8e03a1aba76fef650eccb708ecb9df52881e0d7/App_screenshots/ss1.jpg" width="800" height="1600">
 
 <b>Overview</b>
 
