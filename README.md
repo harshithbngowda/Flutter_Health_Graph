@@ -29,6 +29,9 @@ fl_chart: Chart rendering
 Clone the repository or copy the code files into your Flutter project.
 Ensure you have Flutter SDK installed (flutter --version).
 Run flutter pub get to install dependencies.
+```bash
+flutter pub get
+```
 Launch the app with flutter run.
 
 <b>Running the App</b>
