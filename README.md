@@ -33,7 +33,7 @@ Run flutter pub get to install dependencies.
     ```bash
     flutter pub get
     ```
-    Launch the app with flutter run.
+Launch the app with flutter run.
 
 <b>Running the App</b>
 
