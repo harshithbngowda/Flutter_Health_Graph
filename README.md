@@ -1,16 +1,30 @@
-# health_app
+Overview
 
-A new Flutter project.
+The Health Tracker Flutter App is a simple yet feature-rich mobile application built with Flutter. It allows users to log daily health metrics (steps walked, water intake, hours of sleep), visualize them through separate and combined charts, switch between light/dark modes, and view historical data.
 
-## Getting Started
+Features
 
-This project is a starting point for a Flutter application.
+Input Form: 
+Enter your name, age, steps walked, water intake, and hours of sleep with validation.
+Charts:
+Individual bar charts for steps, water, and sleep.
+Combined chart (bar or line view) for all metrics.
+Theme Toggle: 
+Switch between light and dark themes.
+History: 
+View saved entries from past days.
+Persistent Storage: 
+Saves theme preference and history using shared_preferences.
 
-A few resources to get you started if this is your first Flutter project:
+Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+provider: State management
+shared_preferences: Data persistence
+fl_chart: Chart rendering
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Installation
+
+Clone the repository or copy the code files into your Flutter project.
+Ensure you have Flutter SDK installed (flutter --version).
+Run flutter pub get to install dependencies.
+Launch the app with flutter run.
