@@ -1,4 +1,4 @@
-![App Preview](https://github.com/harshithbngowda/Flutter_Health_Graph/blob/b8a2c7146316f3b72efab646fcaec341f16bb42f/Screenshot1.jpg?raw=true)
+![image alt](https://github.com/harshithbngowda/Flutter_Health_Graph/blob/b8a2c7146316f3b72efab646fcaec341f16bb42f/Screenshot1.jpg?raw=true)
 Overview
 
 The Health Tracker Flutter App is a simple yet feature-rich mobile application built with Flutter. It allows users to log daily health metrics (steps walked, water intake, hours of sleep), visualize them through separate and combined charts, switch between light/dark modes, and view historical data.
